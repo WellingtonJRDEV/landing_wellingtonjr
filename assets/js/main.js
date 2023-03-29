@@ -30,21 +30,3 @@ const bgNavbarItem = () => {
     navbar.setAttribute('data-bs-theme', 'light')
   }
 }
-
-// limpar campos
-
-// function cleanFields() {
-// 	let nome = document.getElementById('nome')
-// 	let email = document.getElementById('email')
-// 	let mensagem = document.getElementById('mensagem')
-// 	let assunto = document.getElementById('assunto')
-
-// 	nome.value = ""
-// 	email.value = ""
-// 	mensagem.value = ""
-// 	assunto.value = ""
-// }
-
-document.querySelector('#formSubmit').addEventListener('submit', e => {
-  console.log('ok')
-})
