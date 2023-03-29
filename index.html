@@ -15,9 +15,9 @@
 	</head>
 	<body>
 		<!-- HEADER NAVBAR -->
-		<header>
+		<header class="mb-lg-5">
 			<nav
-				class="navbar navbar-expand-lg bg-light"
+				class="navbar fixed-top navbar-expand-lg bg-light"
 				data-bs-theme="light"
 				id="nav-bar"
 			>
@@ -67,7 +67,12 @@
 			</nav>
 		</header>
 		<!-- /HEADER NAVBAR -->
-		<div class="position-relative">
+		
+		<!-- MAIN CONTENT -->
+		<div class="container-fluid">
+			<br>
+			<br>
+			<div class="position-relative">
 			<button
 				id="dark-mode-toggle"
 				class="btn btn-light position-absolute top-0 end-0"
@@ -75,7 +80,7 @@
 				<span class="material-symbols-outlined">routine</span>
 			</button>
 		</div>
-		<!-- MAIN CONTENT -->
+		</div>
 		<main class="container-fluid mt-5">
 			<section class="row mb-5" id="inicio">
 				<div class="col-md text-center bounceInDown" id="img-container">
@@ -272,7 +277,7 @@
 			<section class="row mt-5 mb-5" id="contato">
 				<div class="col-sm-12 col-lg-5 ">
 					<h2 class="text-center p-5 border-top">Contato</h2>
-					<form class="form-group" method="POST" action="https://api.staticforms.xyz/submit">
+					<form class="form-group" method="POST" action="https://api.staticforms.xyz/submit" id="formSubmit">
 						<input type="hidden" name="accessKey" value="4dc13045-4e4e-4dcb-af92-ad0ae21783ec">
 						<input type="hidden" name="redirectTo" value="">
 						<input type="text" name="honeypot" style="display: none;">
@@ -294,7 +299,7 @@
 					  		<textarea class="form-control" id="mensagem" name="message" rows="3"></textarea>
 						</div>
 						<div class="link-btn">
-							<input type="submit" value="Enviar mensagem" class="btn btn-primary" id="submit"></button>
+							<input type="submit" value="Enviar mensagem" class="btn btn-primary"></button>
 						</div>
 					</form>
 				</div>
@@ -303,16 +308,16 @@
 		<!-- /MAIN CONTENT -->
 
 		<footer class="container text-center fluid mt-5 mb-2 p-5" id="footer">
-			<div class="row">
+			<div class="row m-3">
 				<div class="col">
-					<a href="https://www.linkedin.com/in/jos%C3%A9-wellington-ferreira-da-silva-j%C3%BAnior-a783781ab/" class="text-decoration-none" target="_blank">Linkedin</a>
-					<a href="https://www.instagram.com/wellingtonjrdev/" target="_blank" class="text-decoration-none">Instagram</a>
-					<a href="https://web.whatsapp.com/send?phone=351924403393" target="_blank" class="text-decoration-none">WhatsApp</a>
+					<a href="https://www.linkedin.com/in/jos%C3%A9-wellington-ferreira-da-silva-j%C3%BAnior-a783781ab/" class="text-decoration-none m-2" target="_blank"><img src="./assets/img/linkedin.png" alt="linkedin wellington junior"></a>
+					<a href="https://www.instagram.com/wellingtonjrdev/" target="_blank" class="text-decoration-none m-2"><img src="./assets/img/instagram.png" alt="instagram wellington junior"></a>
+					<a href="https://web.whatsapp.com/send?phone=351924403393" target="_blank" class="text-decoration-none m-2"><img src="./assets/img/whatsapp.png" alt="whatsapp wellington junior"></a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<p>WJ Consultoria - 2023 &copy; All rights reserved</p>
+					<p>WJ Consultoria - 2023 <span class="text-primary">&copy;</span> All rights reserved</p>
 				</div>
 			</div>
 		</footer>

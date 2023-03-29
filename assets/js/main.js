@@ -45,8 +45,6 @@ function cleanFields() {
 	assunto.value = ""
 }
 
-document.querySelector('#submit').addEventListener('submit', (e) => {
-	e.preventDefault();
-	sendEmail()
+document.querySelector('#formSubmit').addEventListener('submit', (e) => {
 	cleanFields()
 })
